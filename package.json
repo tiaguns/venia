@@ -1,0 +1,35 @@
+{
+  "name": "teste_cypress",
+  "version": "1.0.0",
+  "description": "teste projeto cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "cypress:open": "cypress open"
+  },
+  "author": "Tiago Nascimento",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.33.1",
+    "cypress": "^10.11.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1",
+    "faker": "^6.6.6"
+
+    
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps",
+    "cucumberJson": {
+      "generate": false,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".json"
+
+      
+    }
+  }
+
+ 
+}
