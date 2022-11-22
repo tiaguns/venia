@@ -5,7 +5,7 @@ class LoginPage {
 
 opensigninform() {
     
-    cy.get('button[aria-label="Toggle My Account Menu"]').click();
+    cy.get('[data-cy="AccountTrigger-trigger"] > .accountChip-root-1l4').click();
 }
 
 fillemailfield() {
@@ -27,7 +27,7 @@ fillloginform() {
 
 
 clicksignin() {
-    cy.get('[data-cy="SignInButton-root_highPriority"] > .button-content-3wD').click();
+    cy.get('[data-cy="SignInButton-root_highPriority"]').click();
     
 }
 

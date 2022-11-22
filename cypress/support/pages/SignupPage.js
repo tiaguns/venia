@@ -5,7 +5,7 @@ class SignupPage {
     go() {
 
         cy.visit('https://develop.pwa-venia.com/');
-        cy.get('button[aria-label="Toggle My Account Menu"]').click();
+        cy.get('[data-cy="AccountTrigger-trigger"] > .accountChip-root-1l4').click();
         cy.contains('Create an Account').should('be.visible').click();
         
 
@@ -14,12 +14,12 @@ class SignupPage {
     gosign() {
 
         cy.visit('https://develop.pwa-venia.com/');
-        cy.get('button[aria-label="Toggle My Account Menu"]').click()
+        cy.get('[data-cy="AccountTrigger-trigger"] > .accountChip-root-1l4').click()
         
     }
 
     gotosignup(){
-        cy.get('button[aria-label="Toggle My Account Menu"]').click();
+        cy.get('[data-cy="AccountTrigger-trigger"] > .accountChip-root-1l4').click();
     }
     
 

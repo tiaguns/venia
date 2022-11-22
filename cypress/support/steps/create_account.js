@@ -6,7 +6,7 @@ cy.visit('https://develop.pwa-venia.com/');
 })
 
 When('I click on sign in button', () => {
-cy.get('button[aria-label="Toggle My Account Menu"]').click();
+cy.get('[data-cy="SignInButton-root_highPriority"]').click();
 })
 
 And('I click on create an account button', () => {
@@ -51,7 +51,7 @@ And('I click on sign out button', () => {
 })
 
 And('I click on sign in button', () => {
-    cy.get('button[aria-label="Toggle My Account Menu"]').click();
+    cy.get('[data-cy="SignInButton-root_highPriority"]').click();
 })
 
 And('I fill the login_email field', () => {
@@ -63,7 +63,7 @@ And('I fill the login_password field', () => {
 })
 
 When('I click on login_sign in button', () => {
-        cy.get('.button-root_highPriority-1Zl').should('be.visible').click();
+    cy.get('[data-cy="SignInButton-root_highPriority"]').should('be.visible').click();
 })
 
 Then('I see the user name', () => {
