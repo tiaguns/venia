@@ -23,10 +23,10 @@ And('I fill the password field', () => {
     login.fillpasswordfieldw() 
 })
 
-And('I click on login_sign in button', () => {
+When('I click on login_sign in button', () => {
     login.clicksignin() 
 })
 
-And('I see the invalid password message', () => {
+Then('I see the invalid password message', () => {
     login.invalidloginmessage()
 })

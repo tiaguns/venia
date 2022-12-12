@@ -5,8 +5,8 @@ Given('I go to venia website', () => {
 cy.visit('https://develop.pwa-venia.com/');
 })
 
-When('I click on sign in button', () => {
-cy.get('[data-cy="SignInButton-root_highPriority"]').click();
+And('I click on sign in button', () => {
+cy.get('[data-cy="AccountTrigger-trigger"] > .accountChip-root-1l4').click();
 })
 
 And('I click on create an account button', () => {
